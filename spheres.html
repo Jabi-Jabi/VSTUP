@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <style>
+        .block {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 900px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .block.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .block h2 {
+            color: #38a39c;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .block p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .block ul {
+            margin-left: 30px;
+            list-style-type: square;
+        }
+
+        .block ul li {
+            font-size: 18px;
+        }
+
+        .block img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна - Віртуальна та Доповнена Реальність</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">VR & AR</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про технології</a></li>
+                    <li><a href="spheres.html">Сфери використання</a></li>
+                    <li><a href="equipment.html">Обладнання</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="source.html">Джерела</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <!DOCTYPE html>
+<html lang="uk">
+
+<body>
+    <h1>Сфери використання VR та AR</h1>
+
+    <div class="block">
+        <h2></h2>
+        <p>Віртуальна та доповнена реальність знаходять застосування в широкому спектрі галузей, змінюючи способи роботи, навчання та розваг.</p>
+    </div>
+
+    <div class="block">
+        <h2>1. AR та VR у військовій техніці</h2>
+        <p>Поширення у збройних силах провідних країнах світу різноманітних тактичних засобів доповненої реальності робить актуальним завдання стандартизації відповідної технології візуалізації та протоколів передачі даних.
+            Технологія ARC4 дозволяє невеликим підрозділам виконувати свої місії з високою обізнаністю про оточення, з підвищеною безпекою та швидкістю та в тісній координації з членами команди.
+            Замість того, щоб дивитися вниз на карту та накладати її, орієнтуючи її на правду перед собою, ARC4 розміщує інформацію з ATAK, удень чи вночі, у вашому полі зору. Ваша голова в бойовому просторі, де їй і місце.
+            Подивіться на область, і ви побачите плаваючі піктограми над цілями, товариськими матчами, маршрутами, маршрутними точками тощо в полі зору, і вони відстежують 360 градусів, коли ви скануєте горизонт.
+            Ця система COTS об’єднує GPS, акселерометр, гіроскоп, магнітометр, датчик барометричного тиску, а також камеру EO. Вихід здійснюється через Day HUD або кліпон для системи візуального доповнення, включаючи ECOTI/ECOSI від Optics1.
+        </p>
+        <p>
+            Військова сфера — тренування пілотів, водіїв, операторів, підрозділів з імітацією збройних сутичок тощо (наприклад, симулятор Virtual Battlespace), відтворення історичних бойових ситуацій. На картинці солдат, що тренується на пристрої віртуальної реальності
+        </p>
+        <img src="ARC4.jpg" alt="ARC4.2">
+        <img src="facdome.webp" alt="Virtual Battlespace"
+    </div>
+
+    <div class="block">
+        <h2>2. VR у освіті, мистецтві, та науці.</h2>
+        <ul>
+            <li>Моделювання складної чи небезпечної діяльності, наприклад, керування транспортом, хірургічних операцій</li>
+            <li>VR може допомогти художникам та кураторам створити виставки з залученням одночасно як константної реальності, так і віртуальної.</li>
+            <li>візуалізація внутрішньої будови об'єктів, молекулярних і атомних структур. Зокрема в медицині віртуальна реальність забезпечує дистанційне і точне керування інструментами</li>
+        </ul>
+        <img src="2-2.jpg" alt="Загрози для даних">
+    </div>
+
+    <div class="block">
+        <h2>3. Розваги з AR та VR</h2>
+        <p>Найбільші приклади використання новітніх технологій у сфері розваг:</p>
+        <ul>
+            <li>VR ігри здобули великої популярності. Хоч вони не такі дешеві, але вони провели фурор у світі ігор, так як можна мольберт для розробників став більшим у тисячі разів, а пристрої стають все новішими. Наприклад Half Life Alyx, що перевернула ігровий світ.</li>
+        </ul>
+        <img src="alyx.jpg">
+    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const blocks = document.querySelectorAll('.block');
+
+    function checkVisibility() {
+        blocks.forEach(block => {
+            const rect = block.getBoundingClientRect();
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                block.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility();
+});
+</script>
+</body>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 VR & AR - Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html

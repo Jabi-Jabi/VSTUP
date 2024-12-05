@@ -1,0 +1,161 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Навігація */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #ff9800;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-menu_visible {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        background: #1e1e1e;
+        padding: 10px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, #1e1e1e, #383838);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #e68a00;
+}
+
+/* Футер */
+.footer {
+    background: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.custom-list {
+    margin: 20px 0; /* Разделение между списками */
+    padding-left: 40px; /* Сдвиг списка влево */
+    font-size: 18px; /* Увеличение размера текста в списке */
+    line-height: 1.8; /* Межстрочный интервал для удобства чтения */
+}
+
+.custom-list li {
+    margin-bottom: 10px; /* Разделение между элементами списка */
+}
+
+h4 {
+    margin-top: 30px; /* Разделение между заголовком и списком */
+    font-size: 20px; /* Увеличение размера заголовка для акцента */
+    color: #cc7d7d; /* Цвет заголовка */
+}
+
+.info-block {
+    opacity: 0;
+    transform: translateY(50px); /* Смещение вниз для эффекта подъема */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Плавный эффект */
+}
+
+.info-block.visible {
+    opacity: 1;
+    transform: translateY(0); /* Возврат на место */
+}

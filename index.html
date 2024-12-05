@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна - Віртуальна та Доповнена Реальність</title>
+    <style>
+        /* Основні стилі */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #121212; /* Темний фон */
+    color: #f1f1f1; /* Світлий текст */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Хедер */
+.header {
+    background: #1e1e1e; /* Темно-сірий фон для хедера */
+    color: #f1f1f1; /* Білий текст */
+    padding: 1rem 0;
+    border-bottom: 2px solid #333; /* Тонка нижня лінія */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #f1f1f1;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ffc107; /* Жовтий колір при наведенні */
+}
+
+/* Hero секція */
+.hero {
+    background: #181818; /* Темний фон для основного блоку */
+    text-align: center;
+    padding: 2rem 1rem;
+    border: 1px solid #333; /* Декоративна рамка */
+}
+
+.hero h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffc107; /* Жовтий текст заголовка */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0; /* Трохи світліший текст для читабельності */
+}
+
+/* Кнопка */
+.btn {
+    background: #ffc107; /* Жовта кнопка */
+    color: #121212; /* Темний текст */
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #ffcd38; /* Світліший жовтий при наведенні */
+    transform: scale(1.05); /* Збільшення кнопки */
+}
+
+/* Footer */
+.footer {
+    background: #1e1e1e; /* Темний фон для футера */
+    color: #f1f1f1; /* Білий текст */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 2px solid #333; /* Верхня рамка футера */
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">VR & AR</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про технології</a></li>
+                    <li><a href="spheres.html">Сфери використання</a></li>
+                    <li><a href="equipment.html">Обладнання</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="source.html">Джерела</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 id="demo"></h2> <!-- Ефект друкарської машинки буде тут -->
+                <p>Досліджуйте можливості віртуальної та доповненої реальності разом із нами.</p>
+                <a href="about.html" class="btn">Дізнатись більше</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 VR & AR - Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script>
+        var i = 0;
+        var txt = 'Ласкаво просимо в майбутнє!';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        // Виклик функції після завантаження сторінки
+        document.addEventListener('DOMContentLoaded', typeWriter);
+    </script>
+</body>
+</html>

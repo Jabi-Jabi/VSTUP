@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна - Віртуальна та Доповнена Реальність</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Про технології</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про технології</a></li>
+                    <li><a href="spheres.html">Сфери використання</a></li>
+                    <li><a href="equipment.html">Обладнання</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="source.html">Джерела</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero">
+        <section class="info-block">
+            <h2>Про технології VR</h2>
+            <p> Віртуальна реальність (VR) та доповнена реальність (AR) – це дві інноваційні технології, 
+                які швидко змінюють наш світ. Вони відкривають перед нами нові можливості для навчання, 
+                роботи, розваг та взаємодії з цифровим світом.
+            </p>
+        </section>
+        <section class="info-block">
+            <h3>Що таке Віртуальна Реальність?</h3>
+            <p>Віртуальна реальність створює повністю штучне середовище, в яке користувач занурюється за допомогою 
+                спеціальних пристроїв (шоломів, окулярів). Це дозволяє відчути себе в іншому світі, будь то 
+                фантастичний ландшафт, історична подія або навіть інша планета.
+            </p>
+        </section>
+        <section class="info-block">
+            <h4>Галузі використання VR:</h4>
+            <ul>
+                <li>Ігри: Занурюватися в ігрові світи з безмежними можливостями.</li>
+                <li>Освіта: Вивчати складні концепції в інтерактивній формі.</li>
+                <li>Медицина: Тренінги для хірургів, допомога пацієнтам у подоланні страхів.</li>
+                <li>Архітектура: Візуалізація проектів перед будівництвом.</li>
+            </ul>
+        </section>
+        <section class="info-block">
+            <h4>Що таке Доповнена Реальність?</h4>
+            <p>
+                Доповнена реальність додає цифрові елементи до реального світу. Це можуть бути зображення, 
+                відео, звуки або навіть 3D-моделі, які відображаються на екрані смартфона або спеціальних окулярах.
+            </p>
+        </section>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const blocks = document.querySelectorAll('.info-block'); // Изменено на '.info-block'
+
+    function checkVisibility() {
+        blocks.forEach(block => {
+            const rect = block.getBoundingClientRect();
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                block.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Запускаем проверку сразу, чтобы уже видимые блоки появились
+    });
+    </script>
+    
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 VR & AR - Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>

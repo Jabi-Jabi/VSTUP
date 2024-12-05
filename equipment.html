@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300:italic" rel="stylesheet">
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script defer src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <link rel="stylesheet" href="styles.css">
+        <div class="container">
+            <h1 class="logo">VR & AR</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про технології</a></li>
+                    <li><a href="spheres.html">Сфери використання</a></li>
+                    <li><a href="equipment.html">Обладнання</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="source.html">Джерела</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="carousel">
+        <div class="carousel__control">
+        </div>
+        <div class="carousel__stage">
+            <div class="spinner spinner--left">
+                <div class="spinner__face js-active" data-bg="#27323c">
+                    <div class="content" data-type="iceland">
+                        <div class="content__left">
+                            <h1>OCULUS RIFT<br><span>VALVE</span></h1>
+                        </div>
+                        <div class="content__right">
+                            <div class="content__main">
+                                <p>Oculus Rift — це одна з перших широко відомих систем віртуальної реальності (VR), розроблена компанією Oculus VR, яка зараз належить Meta (раніше Facebook). Oculus Rift викликав революцію в індустрії VR, задав стандарт для сучасних пристроїв віртуальної реальності.</p>
+                            </div>
+                            <h3 class="content__index">01</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="spinner__face" data-bg="#19304a">
+                    <div class="content" data-type="china">
+                        <div class="content__left">
+                            <h1>PLAYSTATION<br><span>SONY</span></h1>
+                        </div>
+                        <div class="content__right">
+                            <div class="content__main">
+                                <p>PlayStation VR (PS VR) — це гарнітура віртуальної реальності (VR), розроблена компанією Sony Interactive Entertainment для ігрових консолей PlayStation. Вона дозволяє користувачам зануритися в ігровий процес завдяки спеціальному дисплею, сенсорам і контролерам. Ось основна інформація про неї:</p>
+                                <p>OLED-дисплей із роздільною здатністю 1920 x 1080 (960 x 1080 на кожне око), Частота оновлення 90–120 Гц, що забезпечує плавне зображення. Кут огляду — приблизно 100 градусів</p>
+                            </div>
+                            <h3 class="content__index">02</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="spinner__face" data-bg="#2b2533">
+                    <div class="content" data-type="usa">
+                        <div class="content__left">
+                            <h1>META QUEST<br><span>FACEBOOK</span></h1>
+                        </div>
+                        <div class="content__right">
+                            <div class="content__main">
+                                <p>Meta Quest (раніше Oculus Quest) — це лінійка автономних гарнітур віртуальної реальності від компанії Meta (колишня Facebook), яка здобула популярність завдяки простоті використання, автономності та широкому функціоналу. Гарнітури Meta Quest забезпечують портативність і високу якість VR-досвіду без необхідності підключення до ПК чи консолі, що робить їх доступними як для новачків, так і для досвідчених користувачів. </p>
+                              <p>Meta Quest 2, випущена у 2020 році, є найпопулярнішою моделлю в серії. Вона оснащена OLED-дисплеєм із роздільною здатністю 1832 x 1920 пікселів на кожне око, частотою оновлення до 120 Гц і потужним процесором Qualcomm Snapdragon XR2, що дозволяє насолоджуватися плавним VR-досвідом. </p>
+                            </div>
+                            <h3 class="content__index">03</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="spinner__face" data-bg="#312f2d">
+                    <div class="content" data-type="peru">
+                        <div class="content__left">
+                            <h1>HTC<br><span>VALVE</span></h1>
+                        </div>
+                        <div class="content__right">
+                            <div class="content__main">
+                                <p>HTC — один із лідерів у сфері технологій віртуальної реальності (VR), відомий своєю лінійкою гарнітур HTC Vive. гарнітура HTC Vive була представлена у 2016 році, розроблена спільно з Valve Corporation і стала відомою завдяки точному відстеженню рухів і інтеграції з платформою SteamVR </p>
+                              <p>HTC Vive Pro — це вдосконалена гарнітура для професіоналів із покращеною роздільною здатністю (2880 x 1600 пікселів), ергономічним дизайном і підтримкою точного відстеження за допомогою базових станцій Lighthouse. </p>
+                            </div>
+                            <h3 class="content__index">04</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--  Poor man's preloader -->
+    <div style="height: 0; width: 0; overflow: hidden">
+    <img src="oculus.webp">
+    <img src=""><img src="sony.jpg"><img src="meta.jpg"><img src="oculus.webp"></div>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 VR & AR - Всі права захищені.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

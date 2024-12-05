@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styless.css">
+  <link rel="stylesheet" href="gallery.css">
+  <title>VR & AR Gallery</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">VR & AR</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="about.html">Про технології</a></li>
+          <li><a href="spheres.html">Сфери використання</a></li>
+          <li><a href="equipment.html">Обладнання</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="source.html">Джерела</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Gallery -->
+  <div class="gallery-container">
+    <button class="arrow left-arrow" id="prevBtn">&#9664;</button>
+    <div class="image-container">
+      <img id="currentImage" src="images/htc.jpg" alt="Gallery Image">
+    </div>
+    <button class="arrow right-arrow" id="nextBtn">&#9654;</button>
+  </div>
+
+  <script>
+    // Массив зображень
+const images = [
+  'images/htc.jpg',
+  'images/meta.jpg',
+  'images/oculus.webp',
+  'images/sony.jpg'
+];
+
+// Індекс поточного зображення
+let currentIndex = 0;
+
+// Елементи галереї
+const currentImage = document.getElementById('currentImage');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+// Функція для оновлення зображення
+function updateImage(index) {
+  currentImage.src = images[index];
+}
+
+// Події для кнопок
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateImage(currentIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateImage(currentIndex);
+});
+
+// Початкове зображення
+updateImage(currentIndex);
+
+
+  </script>
+</body>
+</html>
